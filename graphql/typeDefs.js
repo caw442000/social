@@ -7,14 +7,14 @@ type Post {
   createdAt: String!
   username: String!
 }
-type User{
+type User {
   id: ID!
   email: String!
   token: String!
   username: String!
   createdAt: String!
 }
-input RegisterInput{
+input RegisterInput {
   username: String!
   password: String!
   confirmPassword: String!
@@ -23,7 +23,7 @@ input RegisterInput{
 type Query {
   getPosts: [Post]
 }
-type Muation {
+type Mutation {
   register(registerInput: RegisterInput): User!
 }
 `;
