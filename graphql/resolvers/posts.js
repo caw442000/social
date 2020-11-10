@@ -25,5 +25,10 @@ module.exports = {
         throw new Error(err)
       }
     }
+  },
+  Mutation: {
+    async createPost(_,{ body }) {
+      
+    }
   }
 }
